@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-barlow: Barlow, sans-serif;
+  --font-poppins: Poppins, sans-serif;
+  --primary-color: rgb(69, 245, 127);
+}
+
+
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  ::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  border: 3px solid var(--primary-color); 
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1317;
+}
+
+  .header {
+    min-height: 92vh;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 4%;
+  }
+
+  .nav .logo {
+    width: 55%;
+    margin: 0;
+  }
+
+  .middle-nav,
+  .right-nav {
+    display: none;
+  }
+
+  .mobile-menu i {
+    font-size: 32px;
+    color: rgb(69, 245, 127);
+    border: 2px solid rgb(69, 245, 127);
+    padding: 4px;
+  }
+  .hero {
+    width: 100%;
+    height: 100%;
+    /* height: 25%; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 200px;
+    gap: 0.7rem;
+  }
+  .hero h2 {
+    font-size: 67px;
+    text-shadow: 0 4px #3fbf7f;
+  }
+
+  .hero p {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+
+  .animation {
+    width: 56%;
+    height: 50%;
+  }
+
+  .box span {
+    font-size: 15px;
+    font-family: var(--font-barlow);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #201f2a;
+    line-height: 1;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  /* hero section end  */
+
+  /* 2nd section expiernce section  */
+
+  .sec-sec-top {
+  padding-top: 70px;
+}
+  .top-sec h2 {
+    font-size: 35px;
+  }
+  .sec-bottom h2 {
+    /* margin-top: 20px; */
+    font-size: 24px;
+  }
+
+  .sec-down {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .svg-div {
+    position: relative;
+    flex-direction: column-reverse;
+    bottom: 80px;
+    left: 5px;
+  }
+
+    .text-div {
+    position: relative;
+    text-align: center;
+    top: 100px;
+    left: 50px;
+  }
+
+  .text-div h2 {
+    font-size: 24px;
+  }
+
+  .text-div h3 {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .sec-svg-div {
+    position: relative;
+    margin-left: 110px;
+    bottom: 20px;
+  }
+
+  .sec-svg-div h2 {
+    top: 40px;
+    right: 15px;
+  }
+
+.text-div-3 {
+  position: relative;
+  left: 170px;
+  bottom: 40px;
+  /* margin: 25px 0 0 18px; */
+}
+
+.text-div-3 h3 {
+text-align: right;
+}
+
+/* 3rd journey section  */
+.main-contain {
+    flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 5% 5%;
+}
+/* right section start  */
+.right-sec-first {
+  display: block ;
+}
+
+.right-section-second {
+    display: none;
+}
+
+.bg-color {
+ display: none;
+}
+
+.img-two {
+  width: 70%;
+  position: absolute;
+  right: 320px;
+  left: 55px;
+  bottom: 70px;
+  z-index: 200;
+}
+
+.img-one {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+/* right section end  */
+/* left-section start  */
+
+.left-sec h2 {
+    font-size: 35px;
+}
+
+.animate-img {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  transition: none;
+}
+
+.animate-img img {
+  width: 50%;
+  animation: spin 9s linear infinite;
+  background: transparent;
+}
+/* left-section end  */
+
+/* 4th section scroll sec  */
+
+.scroll-sec {
+  padding: 0;
+}
+
+.scroll-text p {
+  font-size: 14px;
+}
+
+.scroll-text h2 {
+  font-size: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+    height: 400px;
+  border: 2px solid #393d4f;
+  border-radius: 8px;
+  padding: 2px;
+  position: relative;
+  width: 300px;
+}
+ 
+.card img {
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+/* 4th section end  */
+/* 5th section start  */
+
+.match-titles h2 {
+  font-size: 35px;
+}
+  .svg-desktop {
+    display: none;
+  }
+
+  .svg-mobile {
+    display: block;
+    width: 350px;
+    height: 130px;
+  }
+
+  .match-content {
+    position: relative;
+    bottom: 150px;
+    padding: 1rem;
+  }
+
+
+.match-img {
+  height:55px;
+  width: 55px;
+  margin-right: 0;
+  position: relative;
+  left: 20px;
+  bottom: 20px;
+}
+
+.match-text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.match-text p {
+  font-size: 10px;
+  text-align: right;
+}
+
+.match-text h3 {
+  font-size: 18px;
+}
+
+.match-time {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  bottom: 20px;
+}
+
+.match-time h2 {
+  text-align: center;
+  font-size: 10px;
+}
+
+.match-text-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 0;
+  transition: all 0.2s ease-in-out;
+  margin-top: 40px;
+}
+
+.match-text-two p {
+  font-size: 14px;
+}
+
+.match-text-two h2 {
+  font-size: 22px;
+}
+
+.match-text-two h2 {
+  font-size: 18px;
+}
+
+.match-sec-img {
+  height: 50px;
+  width: 50px;
+  margin-left: 0;
+  position: relative;
+  bottom: 20px;
+  right: 30px;
+}
+
+.match-sec-img img {
+  width: 80%;
+}
+/* 5th section end  */
+
+/* project seccial section 6 start */
+.project-content {
+  flex-direction: column;
+}
+
+.left-project {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-project h2 {
+  font-size: 35px;
+}
+
+.left-project p {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* project section 6 end  */
+
+/* social section 7 start  */
+
+.social-bg .match-container .match-titles h2 {
+  text-align: center;
+}
+
+.social-container  {
+    gap: 20px;
+
+}
+
+.social-card {
+  height: 140px;
+  width: 45%;
+}
+
+/* social container 7 end  */
+
+/* last section 8 start  footer */
+
+.company-logo {
+overflow-x: scroll ;
+gap: 1rem;
+}
+
+.footer-text h2 {
+      font-size: 39px;
+}
+
+.footer-links {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.first-links {
+  order: 2;
+}
+
+.second-links {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.7rem;
+  order: 0;
+}
+
+.third-links {
+  justify-content: flex-start;
+  align-items: flex-start;
+  order: 3;
+}
+
+.copyright {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.copyright h6 {
+ text-align: center; 
+ margin-bottom: 5px;
+}
+
+.copyright-links {
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+/* end of copyright section 8  */
+/* foote section 8 end  */
+}
