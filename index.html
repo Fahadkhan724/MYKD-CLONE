@@ -655,7 +655,8 @@
   <script>
     let cursor = document.getElementById('cursor') 
     document.addEventListener('mousemove',function(e) {
-      cursor.style.cssText = "left:" + e.clientX + "px;top:" + e.clientY +"px"; 
+      cursor.style.left = e.clientX + "px"
+      cursor.style.top = e.clientY + "px"
     })
   </script>
 
