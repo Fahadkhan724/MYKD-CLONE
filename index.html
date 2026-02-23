@@ -48,7 +48,7 @@
 </head>
 
 <body>
-  <div class="custom-cursor"></div>
+  <div class="custom-cursor" id="cursor"></div>
   <header class="header">
     <nav class="nav">
       <div class="logo">
@@ -651,6 +651,13 @@
     <!-- // AOS.init(); -->
 
   <!-- </script> -->
+
+  <script>
+    let cursor = document.getElementById('cursor') 
+    document.addEventListener('mousemove',function(e) {
+      cursor.style.cssText = "left:" + e.clientX + "px;top:" + e.clientY +"px"; 
+    })
+  </script>
 
 </body>
 
